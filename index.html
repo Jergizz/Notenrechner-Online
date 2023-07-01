@@ -1,0 +1,99 @@
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Berechnen Sie Ihren Schulnoten-Durchschnitt schnell und einfach mit meinem praktischen Rechner. Optimieren Sie Ihre Leistung und behalten Sie den Überblick über Ihre schulischen Erfolge."/>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon16.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon24.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon/favicon32.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon/favicon64.ico">
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/favicon/favicon128.ico">
+
+    <!-- Fallback-Favicon für ältere Browser -->
+    <link rel="icon" href="assets/img/favicon/favicon16.ico" type="image/x-icon">
+
+
+    <title>Notenrechner Online</title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h1>Notendurchschnitt berechnen</h1>
+
+      <form id="notenForm" onsubmit="berechneDurchschnitt(); return false;">
+
+        <label for="note">Note:</label>
+
+        <select id="note" required>
+
+          <option value="1">1</option>
+
+          <option value="2">2</option>
+
+          <option value="3">3</option>
+
+          <option value="4">4</option>
+
+          <option value="5">5</option>
+
+          <option value="6">6</option>
+
+        </select>
+
+        <label for="gewichtung">Gewichtung:</label>
+
+        <select id="gewichtung" required>
+
+          <option value="A">2 (Schulaufgabe)</option>
+
+          <option value="B">1 (Ex/Abfrage)</option>
+
+          <option value="C">0.5 (Sonstiges)</option>
+
+        </select>
+
+        <button type="submit" id="submitButton">Zur Berechnung hinzufügen</button>
+        <button type="button" id="alleLoeschenButton" onclick="alleNotenLoeschen()">Alle Noten löschen</button>
+
+      </form>
+
+
+
+      <h2>Eingetragene Noten:</h2>
+
+      <ul id="notenListe"></ul>
+
+
+
+      <h2>Notendurchschnitt:</h2>
+
+      <p id="durchschnitt"></p>
+
+      <a href="https://www.instagram.com/angelo.vpn" target="_blank">
+        <svg class="instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <image href="assets/img/logos/instagram-500.svg" height="24" width="24"/>
+        </svg>
+      </a>
+      
+      
+      
+
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+
+
+  </body>
+
+</html>

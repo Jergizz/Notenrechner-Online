@@ -1,0 +1,159 @@
+/* Globale Stile */
+html {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+  }
+  
+  .container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  select {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  /* Header-Stile */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  
+  /* Notenrechner-Stile */
+  form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  #submitButton {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #submitButton:hover {
+    background-color: #45a049;
+  }
+  
+  #note,
+  #gewichtung {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .entfernenButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 4px 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .entfernenButton:hover {
+    background-color: #d32f2f;
+  }
+  
+  #alleLoeschenButton {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #alleLoeschenButton:hover {
+    background-color: #d32f2f;
+  }
+  
+
+  #durchschnitt {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 480px) {
+    form {
+      grid-template-columns: auto;
+    }
+    
+    #submitButton {
+      grid-column: span 1;
+    }
+  }
+
+  .instagram-icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .instagram-icon {
+      display: none;
+    }
+  }

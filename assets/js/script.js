@@ -18,8 +18,6 @@
             gewichtungen.push(gewichtung);
             updateNotenListe();
             berechneUndAktualisiereDurchschnitt();
-          } else {
-            alert("Die Note muss zwischen 1 und 6 liegen.");
           }
         
           noteInput.value = initialNoteValue;

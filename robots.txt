@@ -2,4 +2,3 @@ User-Agent: *
 Allow: /
 
 Sitemap: https://notenrechner.online/sitemap.xml
-

@@ -1,148 +1,204 @@
-/* Globale Stile */
 html {
-    height: 100%;
-  }
-  
-  body {
-    background-color: #222;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    padding: 0px;
-  }
-  
-  .container {
-    background-color: #333;
-    border-radius: 10px;
-    padding: 30px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  li {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  select {
-    background-color: #333;
-    color: white;
-    border: 1px solid #555;
-    padding: 5px 10px;
-    font-size: 16px;
-    border-radius: 4px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  
-  select::-ms-expand {
-    display: none;
-  }
-  
-  /* Header-Stile */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
-  }
-  
-  
-  /* Notenrechner-Stile */
-  form {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  button {
-    margin-left: 10px;
-  }
-  
-  #submitButton {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #submitButton:hover {
-    background-color: #45a049;
-  }
-  
-  #note,
-  #gewichtung {
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 4px;
-  }
-  
-  .entfernenButton {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 4px 8px;
-    margin-left: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background-color 0.2s;
-  }
-  
-  .entfernenButton:hover {
-    background-color: #d32f2f;
-  }
-  
-  #alleLoeschenButton {
-    background-color: #f44336;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #alleLoeschenButton:hover {
-    background-color: #d32f2f;
-  }
-  
+  height: 100%;
+}
 
-  #durchschnitt {
-    text-align: center;
+body {
+  background-color: #222;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-left: 10px;
+}
+
+#submitButton {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submitButton:hover {
+  background-color: #45a049;
+}
+
+#note,
+#gewichtung {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.entfernenButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 4px 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.entfernenButton:hover {
+  background-color: #d32f2f;
+}
+
+#alleLoeschenButton {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#alleLoeschenButton:hover {
+  background-color: #d32f2f;
+}
+
+#durchschnitt {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    grid-template-columns: auto;
   }
-  
-  @media screen and (max-width: 480px) {
-    form {
-      grid-template-columns: auto;
-    }
-    
-    #submitButton {
-      grid-column: span 1;
-    }
+
+  #submitButton {
+    grid-column: span 1;
   }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links {
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-links a,
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+.github-icon {
+  fill: white;
+  width: 32px;
+  height: 32px;
+}
+
+a:hover .github-icon {
+  fill: #ccc;
+}
+
+.share-icon {
+  fill: white;
+  width: 28px;
+  height: 28px;
+}
+
+#shareButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 2px;
+}
+
+#shareButton:hover {
+  color: #ccc;
+}
+
+.main-content {
+  padding-top: 70px; /* Die Höhe der Navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  overflow: auto;
+}

@@ -10,6 +10,11 @@ function berechneDurchschnitt() {
   const note = parseFloat(noteInput.value);
   const gewichtung = gewichtungSelect.value;
 
+  if (noten.length >= 25) {
+    alert("Es können maximal 25 Noten hinzugefügt werden.");
+    return;
+  }
+
   if (note >= 1 && note <= 6) {
     noten.push(note);
     gewichtungen.push(gewichtung);
